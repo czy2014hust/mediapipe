@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 
-licenses(["notice"])  # Apache 2.0
+licenses(["notice"])
 
 package(default_visibility = ["//mediapipe/framework:__subpackages__"])
 
@@ -261,6 +261,7 @@ cc_test(
         "//mediapipe/framework/port:integral_types",
         "//mediapipe/framework/port:logging",
         "//mediapipe/framework/port:threadpool",
+        "@com_google_absl//absl/container:node_hash_map",
         "@com_google_absl//absl/synchronization",
         "@com_google_absl//absl/time",
     ],
